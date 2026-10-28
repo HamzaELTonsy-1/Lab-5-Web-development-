@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f4fb;
+  color: #263653;
+}
+
+.app {
+  width: 90%;
+  max-width: 650px;
+  margin: 35px auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  font-size: 28px;
+}
+
+header p {
+  color: #7b8498;
+}
+
+.summary {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 22px;
+}
+
+.summary div {
+  flex: 1;
+  background: white;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px #00000008;
+}
+
+.summary span {
+  font-size: 13px;
+  color: #7b8498;
+}
+
+.summary h2 {
+  margin-bottom: 0;
+}
+
+.movie-form {
+  background: white;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #00000008;
+}
+
+.movie-form h2,
+.movie-list h2 {
+  margin-top: 0;
+}
+
+.movie-form label {
+  display: block;
+  margin-top: 14px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.movie-form input,
+.movie-form textarea,
+.movie-form select {
+  width: 100%;
+  padding: 11px;
+  margin-top: 7px;
+  border: 1px solid #dce2ed;
+  border-radius: 7px;
+  font: inherit;
+}
+
+.movie-form textarea {
+  resize: vertical;
+}
+
+button {
+  border: none;
+  padding: 11px 15px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.add-button {
+  width: 100%;
+  margin-top: 18px;
+  background: #477bfa;
+  color: white;
+}
+
+.add-button:hover {
+  background: #3265df;
+}
+
+.movie-list {
+  margin-top: 28px;
+}
+
+.movie-card {
+  background: white;
+  padding: 18px;
+  margin-bottom: 14px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px #00000008;
+}
+
+.movie-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.movie-header h3 {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.remove-button {
+  background: #feecec;
+  color: #d44444;
+  flex-shrink: 0;
+}
+
+.stars {
+  font-size: 21px;
+  margin-bottom: 5px;
+}
+
+.rating-text {
+  color: #7b8498;
+  font-size: 13px;
+}
+
+.review {
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.empty {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  color: #7b8498;
+}
+
+@media (max-width: 480px) {
+  .app {
+    width: 94%;
+    margin: 20px auto;
+  }
+
+  header h1 {
+    font-size: 23px;
+  }
+
+  .summary div {
+    padding: 12px;
+  }
+
+  .movie-header {
+    align-items: flex-start;
+  }
+}
